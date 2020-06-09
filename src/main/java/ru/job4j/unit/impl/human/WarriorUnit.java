@@ -6,11 +6,11 @@ import ru.job4j.unit.action.SpellAction;
 
 import java.util.List;
 
-public class Warrior implements Unit {
+public class WarriorUnit implements Unit {
     private final static String NAME = "Warrior";
     private final Unit decorated;
 
-    public Warrior(Unit decorated) {
+    public WarriorUnit(Unit decorated) {
         this.decorated = decorated;
     }
 
