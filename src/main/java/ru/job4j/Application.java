@@ -1,7 +1,7 @@
 package ru.job4j;
 
 import ru.job4j.army.impl.RandomArmy;
-import ru.job4j.game.ConsoleRandomBattle;
+import ru.job4j.game.impl.ConsoleRandomBattle;
 import ru.job4j.logger.impl.ConsoleLogger;
 import ru.job4j.logger.impl.SingletonLoggerManager;
 import ru.job4j.unit.action.impl.*;

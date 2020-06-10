@@ -1,6 +1,7 @@
-package ru.job4j.game;
+package ru.job4j.game.impl;
 
 import ru.job4j.army.Army;
+import ru.job4j.game.Game;
 import ru.job4j.unit.Unit;
 import ru.job4j.unit.action.Action;
 import ru.job4j.unit.action.EnemyAction;
