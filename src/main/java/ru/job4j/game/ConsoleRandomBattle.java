@@ -25,7 +25,7 @@ public class ConsoleRandomBattle implements Game {
 
             var action = getAttackerAction(attacker);
 
-            var target = getTarget(attacker, action);
+            var target = getTarget(action);
 
             attacker.attack(action, target);
 
@@ -38,14 +38,12 @@ public class ConsoleRandomBattle implements Game {
         return actions.get(actions.size() > 1 ? new Random().nextInt(actions.size()) : 0);
     }
 
-    private Unit getTarget(Unit attacker, Action action) {
-        Unit target = null;
+    private Unit getTarget(Action action) {
+        Unit target;
         if (action instanceof EnemyAction) {
             target = firstMove ? second.getTarget() : first.getTarget();
         } else {
-            while (target == null || target.equals(attacker)) {
-                target = firstMove ? first.getTarget() : second.getTarget();
-            }
+            target = firstMove ? first.getTarget() : second.getTarget();
         }
         return target;
     }
